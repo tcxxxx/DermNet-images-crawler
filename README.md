@@ -4,10 +4,10 @@ Dermnet (www.dermnet.com) is a publicly available dataset of more than 23000 der
 
 --------------------------------------------------------------------------
 ### Overview
-This repo keeps the code to fetch water-marked images (relatively low resolution) automatically from DermNet. Here are some examples of melanoma:
-![nevus-spilus-1](http://119.29.151.114/nevus-spilus-1.jpg)
-![nevus-spilus-2](http://119.29.151.114/nevus-spilus-2.jpg)
-![nevus-spilus-3](http://119.29.151.114/nevus-spilus-3.jpg)
+This repo keeps the code to fetch water-marked images (relatively low resolution) automatically from DermNet. Here are some examples of melanoma:<br>
+<img src="http://119.29.151.114/nevus-spilus-1.jpg" width="300" height="200">
+<img src="http://119.29.151.114/nevus-spilus-2.jpg" width="300" height="200">
+<img src="http://119.29.151.114/nevus-spilus-3.jpg" width="300" height="200">
 
 --------------------------------------------------------------------------
 #### Recommended literatures about *skin disease classification*
