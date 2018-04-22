@@ -12,7 +12,7 @@ This repo keeps the code to fetch water-marked images (relatively low resolution
 <img src="http://119.29.151.114/nevus-spilus-3.jpg" width="300" height="200">
 <img src="http://119.29.151.114/nevus-spilus-4.jpg" width="300" height="200"><br><br>
 
-The Python codes in the repo could download the whole dataset from DermNet:<br>
+The Python codes in the repo could download the whole dataset from DermNet:<br><br>
 <img src="http://119.29.151.114/dermnetsample1.jpg"><br>
 
 
