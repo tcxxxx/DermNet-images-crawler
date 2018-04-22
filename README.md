@@ -1,7 +1,7 @@
 # DermNet-imgsCrawler
 ### DermNet
 Dermnet (www.dermnet.com)is a publicly available dataset of more than 23000 dermatologist-curated skin disease images.<br>
-<img src="http://119.29.151.114/demnet.jpg" width="500" height="300"><br>
+<img src="http://119.29.151.114/demnet.jpg"><br>
 According to [this doc](https://pdfs.semanticscholar.org/af34/fc0aebff011b56ede8f46ca0787cfb1324ac.pdf), Dermnet organizes the skin diseases biologically in a **two-level** taxonomy. The bottom-level contains more than 600 skin diseases in a fine-grained granularity. The top-level contains **23** skin disease classes. Each of the top-level skin disease class contains a subcollection of the bottom-level skin diseases.
 
 --------------------------------------------------------------------------
@@ -12,8 +12,8 @@ This repo keeps the code to fetch water-marked images (relatively low resolution
 <img src="http://119.29.151.114/nevus-spilus-3.jpg" width="300" height="200">
 <img src="http://119.29.151.114/nevus-spilus-4.jpg" width="300" height="200"><br>
 
-The Python codes in the repo could download the whole dataset from DermNet:
-<img src="http://119.29.151.114/dermnetexample1.jpg" width="300" height="400">
+The Python codes in the repo could download the whole dataset from DermNet:<br>
+<img src="http://119.29.151.114/dermnetexample1.jpg"><br>
 
 
 --------------------------------------------------------------------------
