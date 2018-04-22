@@ -2,7 +2,12 @@
 ### DermNet
 Dermnet (www.dermnet.com) is a publicly available dataset of more than 23000 dermatologist-curated skin disease images. According to [1](https://pdfs.semanticscholar.org/af34/fc0aebff011b56ede8f46ca0787cfb1324ac.pdf), Dermnet organizes the skin diseases biologically in a **two-level** taxonomy. The bottom-level contains more than 600 skin diseases in a fine-grained granularity. The top-level contains **23** skin disease classes. Each of the top-level skin disease class contains a subcollection of the bottom-level skin diseases.
 
-
+--------------------------------------------------------------------------
+### Overview
+This repo keeps the code to fetch water-marked images (relatively low resolution) automatically from DermNet. Here are some examples of melanoma:
+![nevus-spilus-1](http://119.29.151.114/nevus-spilus-1.jpg)
+![nevus-spilus-2](http://119.29.151.114/nevus-spilus-2.jpg)
+![nevus-spilus-3](http://119.29.151.114/nevus-spilus-3.jpg)
 
 --------------------------------------------------------------------------
 #### Recommended literatures about *skin disease classification*
