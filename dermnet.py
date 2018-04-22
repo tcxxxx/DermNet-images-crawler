@@ -85,3 +85,80 @@ def download(url, image_path):
     else:
         print "Successfully saved " + image_path
 
+'''
+    Main
+'''
+def main():
+    for sub_ in type_name:
+        SubLinks = []
+        # SubLinks = {}
+        
+        r_ = requests.get(root + '/images/' + sub_)
+        html_page1 = r_.text
+        soup_page1 = BeautifulSoup(html_page1, "html5lib")
+
+        for link in soup_page1.find_all('a'):
+            id_ = link.get('href')
+            if '/images/' in id_:
+                # SubLinks[root + id_] = "."
+                SubLinks.append(root + id_)
+        type_LinksA.append(SubLinks)
+
+    attr = '/photos/'
+
+    for type_ in type_LinksA:
+        maxL_ = []
+        thumbRLinks = []
+        
+        for link_ in type_:
+            PhotosL = []
+            max_ = get_max(link_)
+            maxL_.append(max_)
+            print link_
+            for i_ in range(max_):
+                PhotosL.append(link_ + attr + str(i_+1))
+            
+            print "Pages: ", len(PhotosL)
+            realLinks = photo2links(PhotosL)
+            print "Links: ", len(realLinks)
+            thumbRLinks.append(realLinks)
+
+        type_PagesA.append(maxL_)
+        type_SubLinksA.append(thumbRLinks)
+
+    dir_root = './DermNet/'
+
+    if os.path.exists(dir_root):
+        pass    
+    else:
+        os.mkdir(dir_root) 
+    for category in type_name:
+        iloc = type_name.index(category)
+        dir_disease = dir_root + category + '/'
+        
+        if os.path.exists(dir_disease):
+            pass    
+        else:
+            os.mkdir(dir_disease) 
+            
+        print "Disease: ", dir_disease
+        for sub_ in type_LinksA[iloc]:
+            iloc_sub = type_LinksA[iloc].index(sub_)
+            # print iloc_sub
+            # print sub_.split('/')[-1]
+            dir_sub_disease = dir_disease + sub_.split('/')[-1]
+            # print dir_sub_disease
+            
+            if os.path.exists(dir_sub_disease):
+                pass    
+            else:
+                os.mkdir(dir_sub_disease)
+            
+            for l_ in type_SubLinksA[iloc][iloc_sub]:
+                img_path = dir_sub_disease + '/' + l_.split('/')[-1]
+                img_url = l_
+                download(img_url, img_path)
+
+if __name__ == "__main__":
+    main()
+
