@@ -8,6 +8,7 @@ This repo keeps the code to fetch water-marked images (relatively low resolution
 <img src="http://119.29.151.114/nevus-spilus-1.jpg" width="300" height="200">
 <img src="http://119.29.151.114/nevus-spilus-2.jpg" width="300" height="200">
 <img src="http://119.29.151.114/nevus-spilus-3.jpg" width="300" height="200">
+<img src="http://119.29.151.114/nevus-spilus-4.jpg" width="300" height="200">
 
 --------------------------------------------------------------------------
 #### Recommended literatures about *skin disease classification*
