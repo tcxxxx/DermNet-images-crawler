@@ -78,7 +78,7 @@ def download(url, image_path):
                 shutil.copyfileobj(r.raw, f)
     except Exception as e:
         print e
-        print "Failed to saved " + image_path
+        print "Failed to save " + image_path
         print url + "\n"
         # print image_path
 
