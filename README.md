@@ -1,4 +1,4 @@
-# DermNet-imgsCrawler
+# DermNet-images-crawler
 ### DermNet
 <img src="http://119.29.151.114/dermnet.jpg"><br><br>
 Dermnet (www.dermnet.com)is a publicly available dataset of more than 23000 dermatologist-curated skin disease images.
