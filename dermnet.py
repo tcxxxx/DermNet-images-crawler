@@ -1,5 +1,5 @@
 '''
-    Written in Python 2.7
+    Written in Python 3.7
 '''
 
 import requests
@@ -77,9 +77,9 @@ def download(url, image_path):
                 r.raw.decode_content = True
                 shutil.copyfileobj(r.raw, f)
     except Exception as e:
-        print e
-        print "Failed to save " + image_path
-        print url + "\n"
+        print (e)
+        print ("Failed to save " + image_path)
+        print (url)
         # print image_path
 
     else:
@@ -118,9 +118,9 @@ def main():
             for i_ in range(max_):
                 PhotosL.append(link_ + attr + str(i_+1))
             
-            print "Pages: ", len(PhotosL)
+            print ("Pages: ", len(PhotosL))
             realLinks = photo2links(PhotosL)
-            print "Links: ", len(realLinks)
+            print ("Links: ", len(realLinks))
             thumbRLinks.append(realLinks)
 
         type_PagesA.append(maxL_)
@@ -141,7 +141,7 @@ def main():
         else:
             os.mkdir(dir_disease) 
             
-        print "Disease: ", dir_disease
+        print("Disease: ", dir_disease)
         for sub_ in type_LinksA[iloc]:
             iloc_sub = type_LinksA[iloc].index(sub_)
             # print iloc_sub
