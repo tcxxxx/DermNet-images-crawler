@@ -1,4 +1,9 @@
-# DermNet-images-crawler
+## DermNet-images-crawler
+--------------------------------------------------------------------------
+### Updates
+PRs warmly Welcomed! :) <br>Till 2020 May, the code still works (tested in a macOS Catalina V10.15.2, Python 2.7 env)! But I do admit it is a bit slow ;(
+
+--------------------------------------------------------------------------
 ### DermNet
 <!--- <img src="http://119.29.151.114/dermnet.jpg"><br><br> --->
 [Dermnet](www.dermnet.com) is a publicly available dataset of more than 23000 dermatologist-curated skin disease images.
@@ -17,15 +22,15 @@ This repo keeps the code to fetch water-marked images (relatively low resolution
 The Python code in the repo could download the whole dataset from DermNet:<br><br>
 <img src="http://119.29.151.114/dermnetsample1.jpg"><br><br>
 --->
-In the codes, several helpful modules were used:
+
+--------------------------------------------------------------------------
+### External Modules
+In this project, several helpful modules were used:
 - [Requests](http://docs.python-requests.org/en/master/)
 - [Pillow](https://pillow.readthedocs.io/en/3.1.x/reference/Image.html)
 - [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
-- io
-- os
-- shutil
 
 --------------------------------------------------------------------------
-#### Recommended literatures about *skin disease classification*
+### (Incomplete) literatures about *Skin Disease Classification*
 - [Skin disease classification versus skin lesion characterization: Achieving robust diagnosis using multi-label deep neural networks](https://ieeexplore.ieee.org/document/7899659/)
 - [A Deep Learning Approach to Universal Skin Disease Classification (proj report)](https://pdfs.semanticscholar.org/af34/fc0aebff011b56ede8f46ca0787cfb1324ac.pdf)
